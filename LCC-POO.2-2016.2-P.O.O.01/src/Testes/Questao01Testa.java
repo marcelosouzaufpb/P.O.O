@@ -1,13 +1,12 @@
 package Testes;
 
-import static org.junit.Assert.fail;
-
 import org.junit.Before;
 import org.junit.Test;
 
 import Questao01.Retangulo;
 import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class Questao01Testa {
 	Retangulo r;
 

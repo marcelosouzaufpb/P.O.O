@@ -1,7 +1,6 @@
 package Questao03;
 
 import java.util.ArrayList;
-import java.util.NoSuchElementException;
 
 public class Poligono {
 	protected ArrayList<Ponto> poli;

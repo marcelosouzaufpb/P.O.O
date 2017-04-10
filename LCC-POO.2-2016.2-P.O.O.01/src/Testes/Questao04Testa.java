@@ -1,13 +1,12 @@
 package Testes;
 
-import static org.junit.Assert.*;
 import Questao04.Bits;
-import Questao04.TamanhosDiferentesException;
 import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
 
+@SuppressWarnings("deprecation")
 public class Questao04Testa {
 	Bits bits;
 

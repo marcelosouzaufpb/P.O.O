@@ -1,7 +1,5 @@
 package Testes;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 import Questao08.Data;
@@ -9,6 +7,7 @@ import Questao08.Funcionario;
 import Questao08.Gerente;
 import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class Questao08Testa {
 
 	@Before
