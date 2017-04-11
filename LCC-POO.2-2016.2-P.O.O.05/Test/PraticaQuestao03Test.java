@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import Praticas.AgendaEletronicaComHashMap;
-import Praticas.AgendaEletronicaComTreeSet;
 import Praticas.Contato;
 
 public class PraticaQuestao03Test {
