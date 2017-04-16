@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class Controle {
-	protected List<Funcionario> ListaFuncionarios;
+	protected List<Funcionario> listaFuncionarios;
+	protected List<Cliente> listaDeClientes;
 
 }
