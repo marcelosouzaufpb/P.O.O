@@ -5,14 +5,9 @@ public class Cliente extends Pessoa {
 	private List<TreinosDaSemana> trinosDaSemana;
 	private Acesso acesso;
 
-	public Cliente(String nome, Idade idade, int rg, int cpf, Endereco endereco, Contato telefone) {
-		super(nome, idade, rg, cpf, endereco, telefone);
-
-	}
-
-	public Cliente(String nome, Idade idade, int rg, int cpf, Endereco endereco, Contato telefone,
+	public Cliente(String nome, Idade idade, int rg, int cpf, List<Contato> listaDeContatos,
 			List<TreinosDaSemana> trinosDaSemana, Acesso acesso) {
-		super(nome, idade, rg, cpf, endereco, telefone);
+		super(nome, idade, rg, cpf, listaDeContatos);
 		this.trinosDaSemana = trinosDaSemana;
 		this.acesso = acesso;
 	}

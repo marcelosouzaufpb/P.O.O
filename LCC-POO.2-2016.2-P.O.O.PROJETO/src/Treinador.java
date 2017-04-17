@@ -4,12 +4,10 @@ import java.util.List;
 public class Treinador extends Funcionario {
 	private List<Cliente> listaDeCliente;
 
-	public Treinador(String nome, Idade idade, int rg, int cpf, Endereco endereco, Contato telefone) {
-		super(nome, idade, rg, cpf, endereco, telefone);
-	}
-
-	public Treinador() {
-		this.listaDeCliente = new ArrayList<Cliente>();
+	public Treinador(String nome, Idade idade, int rg, int cpf, List<Contato> listaDeContatos,
+			List<Cliente> listaDeCliente) {
+		super(nome, idade, rg, cpf, listaDeContatos);
+		this.listaDeCliente = listaDeCliente;
 	}
 
 	public List<Cliente> getListaDeCliente() {
