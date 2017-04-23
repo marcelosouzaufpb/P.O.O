@@ -1,4 +1,4 @@
-package Praticas;
+package sistemaDeBanco;
 
 public class Senha {
 	private String nome;

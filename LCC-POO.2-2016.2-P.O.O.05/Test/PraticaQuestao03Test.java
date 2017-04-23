@@ -3,8 +3,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import Praticas.AgendaEletronicaComHashMap;
-import Praticas.Contato;
+import AgendaEletronicaComHashMap.AgendaEletronicaComHashMap;
+import AgendaEletronicaComTreeSet.Contato;
 
 public class PraticaQuestao03Test {
 	Contato c1;
@@ -14,11 +14,11 @@ public class PraticaQuestao03Test {
 
 	@Before
 	public void setUp() throws Exception {
-		c1 = new Contato("Nome01", 01, "@01");
-		c2 = new Contato("Nome02", 02, "@02");
+		c1 = new Contato(01, "@01");
+		c2 = new Contato(02, "@02");
 		agenda = new AgendaEletronicaComHashMap();
-		agenda.addContato(c1);
-		agenda.addContato(c2);
+		agenda.addContato("Nome01",c1);
+		agenda.addContato("Nome02",c2);
 	}
 
 	@Test

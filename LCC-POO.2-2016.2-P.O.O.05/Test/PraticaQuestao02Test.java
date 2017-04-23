@@ -3,8 +3,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import Praticas.AgendaEletronicaComTreeSet;
-import Praticas.Contato;
+import AgendaEletronicaComTreeSet.AgendaEletronicaComTreeSet;
+import AgendaEletronicaComTreeSet.Contato;
 
 
 

@@ -1,4 +1,4 @@
-package Praticas;
+package AgendaEletronicaComTreeSet;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,7 +17,7 @@ public class AgendaEletronicaComTreeSet {
 		this.treeSetDeContatos = new TreeSet<Contato>();
 	}
 
-	public void addContato(Praticas.Contato c1) {
+	public void addContato(AgendaEletronicaComTreeSet.Contato c1) {
 		this.treeSetDeContatos.add(c1);
 	}
 

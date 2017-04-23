@@ -1,4 +1,4 @@
-package Praticas;
+package AgendaEletronica;
 
 public class Contato implements Comparable<Contato> {
 	private String nome;
