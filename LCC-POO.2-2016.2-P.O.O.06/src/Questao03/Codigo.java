@@ -1,5 +1,5 @@
 package Questao03;
 
-public class Codigo {
+public class Codigo<X,Y> {
 
 }
