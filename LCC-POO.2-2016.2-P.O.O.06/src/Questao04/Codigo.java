@@ -1,4 +1,4 @@
-package Questao03;
+package Questao04;
 
 public class Codigo<X, Y> {
 	private X codigo01;
