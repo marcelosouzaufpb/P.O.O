@@ -5,12 +5,6 @@ public class Senha {
 	private int idade;
 	private int cpf;
 
-	public Senha() {
-		this.nome = "";
-		this.idade = 0;
-		this.cpf = 0;
-	}
-
 	public Senha(String nome, int idade, int cpf) {
 		this.nome = nome;
 		this.idade = idade;
@@ -40,5 +34,4 @@ public class Senha {
 	public void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
-
 }
