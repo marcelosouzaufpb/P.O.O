@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import AgendaEletronicaComTreeSet.Contato;
-
 public class AgendaEletronica {
 	private List<Contato> listaDeContatos;
 

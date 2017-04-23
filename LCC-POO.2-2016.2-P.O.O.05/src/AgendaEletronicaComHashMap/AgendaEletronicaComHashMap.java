@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import AgendaEletronicaComTreeSet.Contato;
-
 public class AgendaEletronicaComHashMap {
 	private Map<String, Contato> hashMapDeContatos;
 

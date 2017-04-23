@@ -1,10 +1,11 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import AgendaEletronicaComHashMap.AgendaEletronicaComHashMap;
-import AgendaEletronicaComTreeSet.Contato;
+import AgendaEletronicaComHashMap.Contato;
 
 public class PraticaQuestao03Test {
 	Contato c1;
@@ -17,15 +18,15 @@ public class PraticaQuestao03Test {
 		c1 = new Contato(01, "@01");
 		c2 = new Contato(02, "@02");
 		agenda = new AgendaEletronicaComHashMap();
-		agenda.addContato("Nome01",c1);
-		agenda.addContato("Nome02",c2);
+		agenda.addContato("Nome01", c1);
+		agenda.addContato("Nome02", c2);
 	}
 
 	@Test
 	public void testAddContato() {
-		c3 = new Contato("Nome03",03,"@03");
-		agenda.addContato(c3);
-		assertEquals(3,agenda.getContatos().size());
+		c3 = new Contato(03, "@03");
+		agenda.addContato("Nome03", c3);
+		assertEquals(3, agenda.getContatos().size());
 	}
 
 	@Test
@@ -36,12 +37,12 @@ public class PraticaQuestao03Test {
 	@Test
 	public void testRemoverContatoString() {
 		agenda.removerContato("02");
-		assertEquals(1,agenda.getContatos().size());
+		assertEquals(1, agenda.getContatos().size());
 	}
 
 	@Test
 	public void testListarContatos() {
-		assertEquals(1,agenda.listarContatos("02").size());
+		assertEquals(1, agenda.listarContatos("02").size());
 	}
 
 }

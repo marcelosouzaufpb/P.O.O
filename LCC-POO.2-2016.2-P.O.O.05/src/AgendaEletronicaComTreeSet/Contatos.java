@@ -1,17 +1,17 @@
 package AgendaEletronicaComTreeSet;
 
-public class Contato implements Comparable<Contato> {
+public class Contatos implements Comparable<Contatos> {
 	private String nome;
 	private Integer numero;
 	private String email;
 
-	public Contato(String nome, Integer numero, String email) {
+	public Contatos(String nome, Integer numero, String email) {
 		this.nome = nome;
 		this.numero = numero;
 		this.email = email;
 	}
 
-	public Contato() {
+	public Contatos() {
 		this.nome = "";
 		this.numero = 0;
 		this.email = "";
@@ -21,7 +21,7 @@ public class Contato implements Comparable<Contato> {
 		return this.numero;
 	}
 
-	public int compareTo(Contato o) {
+	public int compareTo(Contatos o) {
 		return this.nome.compareTo(o.nome);
 	}
 
@@ -29,8 +29,8 @@ public class Contato implements Comparable<Contato> {
 		if (obj == null) {
 			return true;
 		}
-		if (obj instanceof Contato) {
-			Contato c = (Contato) obj;
+		if (obj instanceof Contatos) {
+			Contatos c = (Contatos) obj;
 			if (c.getNome().equals(this.nome) && c.getNumero().equals(this.numero) && c.getEmail().equals(this.email)) {
 				return true;
 			}

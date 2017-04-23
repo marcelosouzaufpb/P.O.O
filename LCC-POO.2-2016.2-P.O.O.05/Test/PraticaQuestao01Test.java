@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import AgendaEletronica.AgendaEletronica;
-import AgendaEletronicaComTreeSet.Contato;
+import AgendaEletronica.Contato;
 
 public class PraticaQuestao01Test {
 	Contato c1;
