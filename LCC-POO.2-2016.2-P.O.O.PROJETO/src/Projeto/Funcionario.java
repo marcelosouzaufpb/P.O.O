@@ -3,6 +3,10 @@ package Projeto;
 import java.util.List;
 
 public abstract class Funcionario extends Pessoa {
+	public Funcionario(String nome, Idade idade, int rg, int cpf) {
+		super(nome, idade, rg, cpf);
+	}
+
 	private double salario;
 	private List<CargaHoraria> horarioDeTrabalho;
 

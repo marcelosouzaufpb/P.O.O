@@ -7,7 +7,9 @@ public class Treinador extends Funcionario {
 	private Controle controle;
 	private List<Cliente> listaDeClientes;
 
-	public Treinador() {
+	public Treinador(String nome, Idade idade, int rg, int cpf, Controle controle, List<Cliente> listaDeClientes) {
+		super(nome, idade, rg, cpf);
+		this.controle = controle;
 		this.listaDeClientes = controle.getClientes();
 	}
 
@@ -35,5 +37,15 @@ public class Treinador extends Funcionario {
 
 	public void cadastraClientes(Cliente c) {
 		this.listaDeClientes.add(c);
+	}
+
+	public boolean removeClientes(Cliente c) {
+		for (Cliente a : this.listaDeClientes) {
+			if (a.equals(c)) {
+				this.listaDeClientes.remove(a);
+				return true;
+			}
+		}
+		return false;
 	}
 }
