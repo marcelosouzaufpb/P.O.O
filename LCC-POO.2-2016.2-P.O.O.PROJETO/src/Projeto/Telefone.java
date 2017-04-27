@@ -1,14 +1,15 @@
+package Projeto;
 
 public class Telefone {
 	private int numero;
-	private String operadora;
 	private int prefixo;
+	private String operadora;
 
-	public Telefone(int numero, String operadora, int prefixo) {
+	public Telefone(int numero, int prefixo, String operadora) {
 		super();
 		this.numero = numero;
-		this.operadora = operadora;
 		this.prefixo = prefixo;
+		this.operadora = operadora;
 	}
 
 	public int getNumero() {
@@ -19,6 +20,14 @@ public class Telefone {
 		this.numero = numero;
 	}
 
+	public int getPrefixo() {
+		return prefixo;
+	}
+
+	public void setPrefixo(int prefixo) {
+		this.prefixo = prefixo;
+	}
+
 	public String getOperadora() {
 		return operadora;
 	}
@@ -27,11 +36,4 @@ public class Telefone {
 		this.operadora = operadora;
 	}
 
-	public int getPrefixo() {
-		return prefixo;
-	}
-
-	public void setPrefixo(int prefixo) {
-		this.prefixo = prefixo;
-	}
 }
