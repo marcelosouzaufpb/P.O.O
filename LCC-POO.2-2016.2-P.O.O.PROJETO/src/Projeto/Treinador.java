@@ -14,15 +14,6 @@ public class Treinador extends Funcionario {
 		this.listaDeClientes = controle.getClientes();
 	}
 
-	public double calculaSalario(double salario, List<CargaHoraria> horarioDeTrabalho) {
-		List<CargaHoraria> cargH = super.getHorarioDeTrabalho();
-		double horas = 0.0;
-		for (CargaHoraria a : cargH) {
-			horas += a.horasTrabalhadasNoDia();
-		}
-		return horas * super.getSalario();
-	}
-
 	public Controle getControle() {
 		return controle;
 	}
@@ -76,4 +67,45 @@ public class Treinador extends Funcionario {
 		}
 		return false;
 	}
+
+	public double calculaSalario(double salario, List<CargaHoraria> horarioDeTrabalho) {
+		List<CargaHoraria> cargH = super.getHorarioDeTrabalho();
+		double horas = 0.0;
+		for (CargaHoraria a : cargH) {
+			horas += a.horasTrabalhadasNoDia();
+		}
+		return horas * super.getSalario();
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((controle == null) ? 0 : controle.hashCode());
+		result = prime * result + ((listaDeClientes == null) ? 0 : listaDeClientes.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Treinador other = (Treinador) obj;
+		if (controle == null) {
+			if (other.controle != null)
+				return false;
+		} else if (!controle.equals(other.controle))
+			return false;
+		if (listaDeClientes == null) {
+			if (other.listaDeClientes != null)
+				return false;
+		} else if (!listaDeClientes.equals(other.listaDeClientes))
+			return false;
+		return true;
+	}
+
 }

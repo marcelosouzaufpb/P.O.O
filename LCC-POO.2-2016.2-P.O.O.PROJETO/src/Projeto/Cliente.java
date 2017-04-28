@@ -40,6 +40,10 @@ public class Cliente extends Pessoa {
 		this.estatos = estatos;
 	}
 
+	public String toString() {
+		return this.listaDeTreinos.toString() + " (" + this.turno + "," + this.estatos + ")";
+	}
+
 	public void addTreino(Treino t) throws IOException {
 		for (Treino b : this.listaDeTreinos) {
 			if (b.equals(t)) {
