@@ -39,5 +39,6 @@ public class CargaHoraria {
 	public double horasTrabalhadasNoDia() {
 		return this.horarioDeSaida - this.horarioDeChegada;
 	}
+	
 
 }

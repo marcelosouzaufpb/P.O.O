@@ -1,5 +1,6 @@
 package Projeto;
 
+import java.io.IOException;
 import java.util.List;
 
 public class Treinador extends Funcionario {
@@ -13,10 +14,13 @@ public class Treinador extends Funcionario {
 		this.listaDeClientes = controle.getClientes();
 	}
 
-	@Override
 	public double calculaSalario(double salario, List<CargaHoraria> horarioDeTrabalho) {
-		// TODO Auto-generated method stub
-		return 0;
+		List<CargaHoraria> cargH = super.getHorarioDeTrabalho();
+		double horas = 0.0;
+		for (CargaHoraria a : cargH) {
+			horas += a.horasTrabalhadasNoDia();
+		}
+		return horas * super.getSalario();
 	}
 
 	public Controle getControle() {
@@ -35,7 +39,12 @@ public class Treinador extends Funcionario {
 		this.listaDeClientes = listaDeClientes;
 	}
 
-	public void cadastraClientes(Cliente c) {
+	public void cadastraClientes(Cliente c) throws IOException {
+		for (Cliente a : this.listaDeClientes) {
+			if (a.equals(c)) {
+				throw new IOException("Cliente ja cadastrado !!!");
+			}
+		}
 		this.listaDeClientes.add(c);
 	}
 
@@ -43,6 +52,25 @@ public class Treinador extends Funcionario {
 		for (Cliente a : this.listaDeClientes) {
 			if (a.equals(c)) {
 				this.listaDeClientes.remove(a);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public void addTreinoDoCliente(Cliente c, Treino t) throws IOException {
+		for (Cliente a : this.listaDeClientes) {
+			if (a.equals(c)) {
+				a.addTreino(t);
+			}
+		}
+
+	}
+
+	public boolean removerTreinoDoCliente(Cliente c, String dia) {
+		for (Cliente a : this.listaDeClientes) {
+			if (a.equals(c)) {
+				a.removerTreino(dia);
 				return true;
 			}
 		}
