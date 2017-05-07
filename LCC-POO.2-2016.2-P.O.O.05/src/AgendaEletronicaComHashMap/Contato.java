@@ -9,6 +9,10 @@ public class Contato {
 		this.email = email;
 	}
 
+	public int hashCode() {
+		return this.numero;
+	}
+
 	public boolean equals(Object obj) {
 		if (obj == null) {
 			return false;
