@@ -1,1 +1,7 @@
 package TeoricaQuestao03;
+/*
+ * É um objeto que mapeia valores para chaves, ou seja, através da chave
+ * consegue ser acessado o valor configurado, sendo que a chave não pode ser
+ * repetida ao contrário do valor, mas se caso tiver uma chave repetida é
+ * sobrescrito pela última chamada.
+ */

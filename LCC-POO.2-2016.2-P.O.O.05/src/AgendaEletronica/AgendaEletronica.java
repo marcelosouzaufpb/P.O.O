@@ -22,7 +22,7 @@ public class AgendaEletronica {
 	public boolean removerContato(Contato c) {
 		for (Contato contatos : this.listaDeContatos) {
 			if (contatos.equals(c)) {
-				this.listaDeContatos.remove(c);
+				this.listaDeContatos.remove(contatos);
 				return true;
 			}
 		}
