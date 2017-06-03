@@ -10,6 +10,7 @@ public class Questao01 {
 		Questao001 q3 = new Questao001(21, 30);
 		Thread t3 = new Thread(q3);
 
+
 		t1.start();
 		t2.start();
 		t3.start();
