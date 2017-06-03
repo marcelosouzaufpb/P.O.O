@@ -20,6 +20,10 @@ import Programa.Treinador;
 
 public class TelaDeLogin extends javax.swing.JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static String nome;
 	public static String senha;
 
