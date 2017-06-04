@@ -1,6 +1,6 @@
 package Questao01;
 
-public class Questao001 implements Runnable {
+public class Questao001 extends Thread {
 	private int inicio;
 	private int f;
 	
