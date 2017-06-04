@@ -1,10 +1,10 @@
 package Pratica;
 
-public class QP1 extends Thread {
+public class QuestaoPraticaPrograma01 extends Thread {
 	private int Inicio;
 	private int Final;
 
-	public QP1(int Inicio, int Final) {
+	public QuestaoPraticaPrograma01(int Inicio, int Final) {
 		this.Inicio = Inicio;
 		this.Final = Final;
 	}

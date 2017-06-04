@@ -1,6 +1,6 @@
 package Pratica;
 
-public class Q2P implements Runnable {
+public class QuestaoPraticaPrograma02 implements Runnable {
 	static private int contador = 0;
 	private boolean condicao = false;
 
@@ -9,7 +9,7 @@ public class Q2P implements Runnable {
 	}
 
 	public synchronized void setContador(int contador) {
-		Q2P.contador = contador;
+		QuestaoPraticaPrograma02.contador = contador;
 	}
 
 	public void setCondicao() {

@@ -1,9 +1,9 @@
 package Pratica;
 
-public class Q2M {
+public class QuestaoPraticaMAIN02 {
 	public static void main(String[] args) {
 		int[][] vetor = new int[10][10];
-		Q2P programa = new Q2P();
+		QuestaoPraticaPrograma02 programa = new QuestaoPraticaPrograma02();
 
 		for (int i = 0; i < vetor.length; i++) {
 			for (int k = 0; k < vetor[i].length; k++) {
