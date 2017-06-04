@@ -5,11 +5,10 @@ public class Questao02 {
 
 		Questao002 q = new Questao002();
 
-		int[][] a = new int[10][10];
+		int[][] a = new int[10][10];//Criando o array
 
 		for (int i = 0; i < a.length; i++) {
-
-			for (int x = 0; x < a[i].length; x++) {
+			for (int x = 0; x < a[i].length; x++) {//Que todos os elementos do array recebam 1.
 				a[i][x] = 1;
 			}
 		}
@@ -17,14 +16,14 @@ public class Questao02 {
 		for (int i = 0; i < a.length; i++) {
 			Thread t1 = new Thread(q);
 			t1.start();
-			for (int x = 0; x < a[i].length; x++) {
+			for (int x = 0; x < a[i].length; x++) {//Soma dos elementos
 				System.out.println("Thread " + i + " executando linha: " + x);
-				q.setCont(q.getCont() + a[i][x]);
+				q.setContador(q.getContador() + a[i][x]);
 			}
-			q.setCond();
+			q.setCond();//Parando a Thread
 		}
 
-		System.out.print(q.getCont());
+		System.out.print(q.getContador());
 
 	}
 
