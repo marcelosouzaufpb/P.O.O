@@ -13,6 +13,11 @@ public class QuestaoPraticaPrograma03 implements Runnable {
 
 	public void run() {
 		for (int i = 0; i <= 100; i++) {
+			try{
+				Thread.sleep(10000);
+			}catch (Exception e) {
+				e.getMessage();
+			}
 			System.out.println("Thread: " + this.id + " Numero: " + i);
 		}
 	}

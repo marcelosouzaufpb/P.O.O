@@ -5,13 +5,11 @@
  */
 package Telas;
 
-import java.util.List;
-
-import javax.swing.JOptionPane;
-
 import Programa.Cliente;
 import Programa.Gerente;
 import Programa.Treinador;
+import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,10 +18,6 @@ import Programa.Treinador;
 
 public class TelaDeLogin extends javax.swing.JFrame {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	public static String nome;
 	public static String senha;
 
@@ -61,12 +55,14 @@ public class TelaDeLogin extends javax.swing.JFrame {
 		jMenuItem1 = new javax.swing.JMenuItem();
 
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-		setMaximumSize(new java.awt.Dimension(1000, 100));
 		setMinimumSize(new java.awt.Dimension(1000, 1000));
 
+		jScrollPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
+		jScrollPane1.setMaximumSize(new java.awt.Dimension(32767, 850));
 		jScrollPane1.setMinimumSize(new java.awt.Dimension(25, 25));
 
 		jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+		jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
 		jLabel1.setText("Nome:");
 
@@ -90,12 +86,12 @@ public class TelaDeLogin extends javax.swing.JFrame {
 		jPanel2.setLayout(jPanel2Layout);
 		jPanel2Layout.setHorizontalGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 				.addGroup(jPanel2Layout.createSequentialGroup().addComponent(jLabel4,
-						javax.swing.GroupLayout.PREFERRED_SIZE, 657, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(0,
-								343, Short.MAX_VALUE)));
+						javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(0,
+								503, Short.MAX_VALUE)));
 		jPanel2Layout.setVerticalGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 				.addGroup(jPanel2Layout.createSequentialGroup().addComponent(jLabel4,
 						javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addContainerGap()));
+						.addGap(27, 27, 27)));
 
 		jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
 		jLabel3.setText("Tela De Login.");
@@ -171,12 +167,10 @@ public class TelaDeLogin extends javax.swing.JFrame {
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
 		getContentPane().setLayout(layout);
-		layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-				jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1009, javax.swing.GroupLayout.PREFERRED_SIZE));
+		layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+				.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 850, Short.MAX_VALUE));
 		layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-				.addGroup(layout.createSequentialGroup()
-						.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
-						.addGap(0, 0, 0)));
+				.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE));
 
 		pack();
 	}// </editor-fold>//GEN-END:initComponents
